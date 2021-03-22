@@ -1,5 +1,8 @@
 package model.idemo;
 
+import java.awt.Color;
+import java.awt.Graphics2D;
+
 public class Car extends Vehicle {
 	
 	private String type;
@@ -21,6 +24,13 @@ public class Car extends Vehicle {
 	@Override
 	public String getSound() {
 		return "[Car] Vrrr ~~~~~~ ooooooooooo m";
+	}
+
+	@Override
+	public void render(Graphics2D g2) {
+		g2.drawImage(getImage(), null, getX(), getY());
+		g2.setColor(Color.RED);
+		g2.drawString("type="+type, getX(), getY());
 	}
 
 }

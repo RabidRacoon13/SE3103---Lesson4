@@ -20,7 +20,7 @@ public class ImageStore {
 		airplane = readImage("model/images/airplane.png", 80, 60);
 		car = readImage("model/images/car.png", 70, 50);
 		dog = readImage("model/images/dog.png", 70, 50);
-		bird = readImage("model/images/bird.jpg", 70, 50);
+		bird = readImage("model/images/bird.png", 70, 50);
 	}
 
 	public static BufferedImage readImage(String path, int width, int height){
