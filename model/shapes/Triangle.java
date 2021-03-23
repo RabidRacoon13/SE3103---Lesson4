@@ -27,7 +27,7 @@ public class Triangle extends Shape implements IShapeDraw{
 		xs[0] = x;
 		ys[0] = y;
 		xs[1] = x + side;
-		ys[1] = y + side;
+		ys[1] = y;
 		xs[2] = x;
 		ys[2] = y + side;
 
